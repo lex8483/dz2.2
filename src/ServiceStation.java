@@ -1,27 +1,7 @@
-public class ServiceStation {
-    private String modelName;
-    private int wheelsCount;
 
-    public ServiceStation(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
-    }
+public class ServiceStation{
 
-    public String getModelName() {
-        return modelName;
-    }
 
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
-    }
     public void check(Car car, Bicycle bicycle, Truck truck) {
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
@@ -39,7 +19,7 @@ public class ServiceStation {
         } else if (bicycle != null) {
             System.out.println("Обслуживаем " + bicycle.getModelName());
             for (int i = 0; i < bicycle.getWheelsCount(); i++) {
-                updateTyre();
+               updateTyre();
             }
         }
     }
